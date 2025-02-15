@@ -1,2 +1,2 @@
 -cd server
--node index.js
+-nodemon index.js
