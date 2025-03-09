@@ -1,0 +1,27 @@
+.addUser{
+    background-color: white;
+    width: 25%;
+    margin: 50px auto;
+    padding: 40px;   
+    border-radius: 5px;
+    
+}
+.addUser h3{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: cyan;
+    text-transform: uppercase;
+}
+.addUser .inputGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.addUser .inputGroup label{
+    margin-top: 5px;
+}
+.addUser .inputGroup input{
+    margin-bottom: 5px;
+    padding: 10px;
+}
