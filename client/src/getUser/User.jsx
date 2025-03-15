@@ -9,7 +9,7 @@ const User = () => {
     useEffect(() => {
         const fetchData = async()=>{
             try {
-                const response = await axios.get("http://localhost:8000/api/users");
+                const response = await axios.get("https://mern-test-website.onrender.com/api/users");
                 setUsers(response.data)
             } catch (error) {
                 console.log("Error while fetching data", error)
@@ -19,7 +19,7 @@ const User = () => {
     }, []);
 
     const deleteUser = async (userId)=>{
-        await axios.delete(`http://localhost:8000/api/delete/user/${userId}`)
+        await axios.delete(`https://mern-test-website.onrender.com/api/delete/user/${userId}`)
         .then((response)=>{
             setUsers((prevUser)=>prevUser.filter((user) => user._id !== userId))
             

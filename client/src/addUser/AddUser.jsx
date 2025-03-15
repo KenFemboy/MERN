@@ -22,7 +22,7 @@ const AddUser = () => {
     const submitForm = async(e) => {
         e.preventDefault();
         await axios
-            .post("http://localhost:8000/api/user",user)
+            .post("https://mern-test-website.onrender.com/api/user",user)
             .then((response)=>{
                 // console.log("User created successfully");
                 toast.success(response.data.message,{position:"top-center"})
